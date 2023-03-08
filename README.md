@@ -14,13 +14,10 @@
 <details>
 <summary><code><strong>「 点击查看下载地址」</strong></code></summary>
 
-破解版WRobot验证端下载地址 https://mypikpak.com/s/VNPz2bo5Tt5SDgwFvK8AHOHdo1 解压密码：1234567890
+破解版WRobot验证端  解压密码：1234567890 
+**[Download latest](https://github.com/elseif2023/Wrobot/blob/main/document/%E7%A0%B4%E8%A7%A3%E7%89%88WRobot%E9%AA%8C%E8%AF%81%E7%AB%AF.rar)**
 
 查毒检测报告：https://www.virustotal.com/gui/file/7f5703e57194fded6e5588ad54be0b5896009e51c41c6eeaca738a8f77bcb2e7
-
-WRobot_v1.7.2_应用80级_v3.3.5a(12340)_WOTLK下载地址https://mypikpak.com/s/VNPz8gshDFSO0eDOQkFYVWm1o1
-
-查毒检测报告：由于压缩包过大无法提供在线检测报告。
 
 </details>
 
@@ -42,7 +39,7 @@ WRobot_v1.7.2_应用80级_v3.3.5a(12340)_WOTLK下载地址https://mypikpak.com/s
 <img src="https://github.com/elseif2023/Wrobot/blob/main/picture/4.PNG?raw=true" width=100%  />
 </details>
 
-# 成功登录到 破解版WRobot验证端 后，启动魔兽世界并进入游戏在启动由破解程序发布者提供的 WRobot_v1.7.2_应用80级_v3.3.5a(12340)_WOTLK 压缩包内的 WRobot.exe 进行激活 在使用过程中通过截取数据获得了下列内容
+成功登录到 破解版WRobot验证端 后，启动魔兽世界并进入游戏在启动由破解程序发布者提供的 WRobotWOTLK/WRobot.exe 进行激活 在使用过程中通过截取数据获得了下列内容
 
 <details>
 <summary><code><strong>「 点击查看截取信息」</strong></code></summary>
