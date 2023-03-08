@@ -1,0 +1,525 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<QuesterProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <QuestFile>AllianceQuestsDroidz\(05-11)Teldrassil_classes.cs</QuestFile>
+  <QuestsSorted>
+    <QuestsSorted Action="WriteLog" NameClass="Compiling Teldrassil Quests (5-11)" />
+    <QuestsSorted Action="PickUp" NameClass="DolanaarDelivery" />
+    <QuestsSorted Action="PickUp" NameClass="ZennsBidding" />
+    <QuestsSorted Action="Pulse" NameClass="ZennsBidding" />
+    <QuestsSorted Action="Pulse" NameClass="ZennsBiddingObjectif2" />
+    <QuestsSorted Action="If" NameClass="((wManager.Wow.Helpers.Quest.HasQuest(488)) &amp;&amp; (!wManager.Wow.Helpers.Quest.GetQuestCompleted(488)))" />
+    <QuestsSorted Action="None" NameClass="CustomBehavior &gt; UserSettings" />
+    <QuestsSorted Action="EndIf" NameClass="" />
+    <QuestsSorted Action="Pulse" NameClass="ZennsBiddingObjectif3" />
+    <QuestsSorted Action="TurnIn" NameClass="ZennsBidding" />
+    <QuestsSorted Action="PickUp" NameClass="SeekRedemption" />
+    <QuestsSorted Action="PickUp" NameClass="TheEmeraldDreamcatcher" />
+    <QuestsSorted Action="PickUp" NameClass="ATroublingBreeze" />
+    <QuestsSorted Action="If" NameClass="wManager.Wow.Helpers.Quest.HasQuest(2159)" />
+    <QuestsSorted Action="If" NameClass="wManager.Wow.Helpers.Usefuls.GetContainerNumFreeSlots &lt; 40 &amp;&amp; wManager.Wow.Helpers.Usefuls.GetMoneyCopper / 100 &gt;= 5 &amp;&amp; wManager.Wow.Helpers.Quest.HasQuest(313) &amp;&amp; !wManager.Wow.Helpers.Quest.GetQuestCompleted(313)" />
+    <QuestsSorted Action="RunCode" NameClass="wManager.Wow.Bot.Tasks.GoToTask.ToPositionAndIntecractWithNpc(new Vector3(9891, 988, 1327), 3608);" />
+    <QuestsSorted Action="EndIf" NameClass="" />
+    <QuestsSorted Action="RunCode" NameClass="wManager.Wow.Bot.Tasks.GoToTask.ToPositionAndIntecractWithNpc(new Vector3(9802, 982, 1313), 6736);" />
+    <QuestsSorted Action="RunCode" NameClass="wManager.Wow.Helpers.Lua.RunMacroText(&quot;/click StaticPopup1Button1&quot;);" />
+    <QuestsSorted Action="TurnIn" NameClass="DolanaarDelivery" />
+    <QuestsSorted Action="EndIf" NameClass="" />
+    <QuestsSorted Action="If" NameClass="wManager.Wow.Helpers.Quest.HasQuest(28731)" />
+    <QuestsSorted Action="RunCode" NameClass="wManager.Wow.Helpers.MovementManager.MoveTo(9773, 977, 1297);" />
+    <QuestsSorted Action="TurnIn" NameClass="TeldrassilPassingAwareness" />
+    <QuestsSorted Action="EndIf" NameClass="" />
+    <QuestsSorted Action="PickUp" NameClass="TeldrassilTheRefusaloftheAspects" />
+    <QuestsSorted Action="Pulse" NameClass="SeekRedemption" />
+    <QuestsSorted Action="TurnIn" NameClass="SeekRedemption" />
+	<QuestsSorted Action="Pulse" NameClass="TeldrassilTheRefusaloftheAspects" />
+    <QuestsSorted Action="TurnIn" NameClass="ATroublingBreeze" />
+    <QuestsSorted Action="PickUp" NameClass="GnarlpineCorruption" />
+    <QuestsSorted Action="Pulse" NameClass="TheEmeraldDreamcatcher" />
+    <QuestsSorted Action="TurnIn" NameClass="GnarlpineCorruption" />
+    <QuestsSorted Action="PickUp" NameClass="TheRelicsofWakening" />
+    <QuestsSorted Action="PickUp" NameClass="ResidentDanger" />
+    <QuestsSorted Action="TurnIn" NameClass="TeldrassilTheRefusaloftheAspects" />
+    <QuestsSorted Action="PickUp" NameClass="NaturesReprisal" />
+    <QuestsSorted Action="TurnIn" NameClass="TheEmeraldDreamcatcher" />
+    <QuestsSorted Action="If" NameClass="((!wManager.Wow.Helpers.Quest.HasQuest(2459)) &amp;&amp; (!wManager.Wow.Helpers.Quest.GetQuestCompleted(2459)))" />
+    <QuestsSorted Action="If" NameClass="wManager.Wow.Helpers.Usefuls.GetContainerNumFreeSlots &lt; 40 &amp;&amp; wManager.Wow.Helpers.Usefuls.GetMoneyCopper / 100 &gt;= 5 &amp;&amp; wManager.Wow.Helpers.Quest.HasQuest(313) &amp;&amp; !wManager.Wow.Helpers.Quest.GetQuestCompleted(313)" />
+    <QuestsSorted Action="RunCode" NameClass="wManager.Wow.Bot.Tasks.GoToTask.ToPositionAndIntecractWithNpc(new Vector3(9891, 988, 1327), 3608);" />
+    <QuestsSorted Action="EndIf" NameClass="" />
+    <QuestsSorted Action="EndIf" NameClass="" />
+    <QuestsSorted Action="PickUp" NameClass="FerocitastheDreamEater" />
+    <QuestsSorted Action="PickUp" NameClass="TwistedHatred" />
+    <QuestsSorted Action="Pulse" NameClass="FerocitastheDreamEater" />
+    <QuestsSorted Action="Pulse" NameClass="FerocitastheDreamEaterObjectif2" />
+    <QuestsSorted Action="TurnIn" NameClass="FerocitastheDreamEater" />
+    <QuestsSorted Action="Pulse" NameClass="NaturesReprisal" />
+    <QuestsSorted Action="Pulse" NameClass="TwistedHatred" />
+    <QuestsSorted Action="TurnIn" NameClass="NaturesReprisal" />
+    <QuestsSorted Action="TurnIn" NameClass="TwistedHatred" />
+    <QuestsSorted Action="If" NameClass="((!wManager.Wow.Helpers.Quest.HasQuest(2541)) &amp;&amp; (!wManager.Wow.Helpers.Quest.GetQuestCompleted(2541)))" />
+    <QuestsSorted Action="RunCode" NameClass="wManager.Wow.Bot.Tasks.GoToTask.ToPositionAndIntecractWithNpc(new Vector3(9822, 969, 1308), 34761, 1);" />
+    <QuestsSorted Action="RunCode" NameClass="Thread.Sleep(66000);" />
+    <QuestsSorted Action="EndIf" NameClass="" />
+    <QuestsSorted Action="PickUp" NameClass="TheSleepingDruid" />
+    <QuestsSorted Action="Pulse" NameClass="TheRelicsofWakening" />
+	<QuestsSorted Action="Pulse" NameClass="TheRelicsofWakeningObjectif2" />
+	<QuestsSorted Action="Pulse" NameClass="TheRelicsofWakeningObjectif3" />
+	<QuestsSorted Action="Pulse" NameClass="TheRelicsofWakeningObjectif4" />
+    <QuestsSorted Action="Pulse" NameClass="TheSleepingDruid" />
+    <QuestsSorted Action="TurnIn" NameClass="TheSleepingDruid" />
+    <QuestsSorted Action="PickUp" NameClass="DruidoftheClaw" />
+    <QuestsSorted Action="If" NameClass="((wManager.Wow.Helpers.Quest.HasQuest(2561)) &amp;&amp; (!wManager.Wow.Helpers.Quest.GetQuestCompleted(2561)))" />
+    <QuestsSorted Action="While" NameClass="!wManager.Wow.Helpers.Quest.GetQuestCompleted(2561)  &amp;&amp; !wManager.Wow.Helpers.Quest.IsObjectiveComplete(1, 2561)" />
+    <QuestsSorted Action="RunCode" NameClass="wManager.Wow.Bot.Tasks.GoToTask.ToPositionAndIntecractWithNpc(new Vector3(9786, 1568, 1301), 7318);" />
+    <QuestsSorted Action="RunCode" NameClass="wManager.Wow.Helpers.Lua.RunMacroText(&quot;/target Rageclaw&quot;);" />
+    <QuestsSorted Action="RunCode" NameClass="wManager.Wow.Helpers.Lua.LuaDoString(&quot;UseItemByName(8149)&quot;);" />
+    <QuestsSorted Action="RunCode" NameClass="Thread.Sleep(7000);" />
+    <QuestsSorted Action="EndWhile" NameClass="" />
+    <QuestsSorted Action="EndIf" NameClass="" />
+    <QuestsSorted Action="TurnIn" NameClass="DruidoftheClaw" />
+    <QuestsSorted Action="TurnIn" NameClass="TheRelicsofWakening" />
+    <QuestsSorted Action="PickUp" NameClass="UrsaltheMauler" />
+    <QuestsSorted Action="TurnIn" NameClass="ResidentDanger" />
+    <QuestsSorted Action="PickUp" NameClass="RemindersofHome" />
+    <QuestsSorted Action="TurnIn" NameClass="RemindersofHome" />
+    <QuestsSorted Action="PickUp" NameClass="ToDarnassus" />
+    <QuestsSorted Action="If" NameClass="wManager.Wow.Helpers.Quest.HasQuest(6341)" />
+    <QuestsSorted Action="RunCode" NameClass="wManager.Wow.Helpers.MovementManager.MoveTo(9937, 2610, 1316);" />
+    <QuestsSorted Action="RunCode" NameClass="wManager.Wow.Helpers.MovementManager.MoveTo(9916, 2631, 1316);" />
+    <QuestsSorted Action="EndIf" NameClass="" />
+    <QuestsSorted Action="TurnIn" NameClass="ToDarnassus" />
+    <QuestsSorted Action="PickUp" NameClass="AnUnexpectedGift" />
+    <QuestsSorted Action="If" NameClass="wManager.Wow.Helpers.Quest.HasQuest(6342)" />
+    <QuestsSorted Action="RunCode" NameClass="wManager.Wow.Helpers.MovementManager.MoveTo(9937, 2610, 1316);" />
+    <QuestsSorted Action="RunCode" NameClass="wManager.Wow.Helpers.MovementManager.MoveTo(9971, 2616, 1316);" />
+    <QuestsSorted Action="EndIf" NameClass="" />
+    <QuestsSorted Action="TurnIn" NameClass="AnUnexpectedGift" />
+    <QuestsSorted Action="PickUp" NameClass="ReturntoNyoma" />
+    <QuestsSorted Action="TurnIn" NameClass="ReturntoNyoma" />
+    <QuestsSorted Action="PickUp" NameClass="TheRoadtoDarnassus" />
+    <QuestsSorted Action="Pulse" NameClass="UrsaltheMauler" />
+    <QuestsSorted Action="Pulse" NameClass="TheRoadtoDarnassus" />
+    <QuestsSorted Action="TurnIn" NameClass="TheRoadtoDarnassus" />
+    <QuestsSorted Action="TurnIn" NameClass="UrsaltheMauler" />
+    <QuestsSorted Action="PickUp" NameClass="DenalansEarth" />
+    <QuestsSorted Action="TurnIn" NameClass="DenalansEarth" />
+    <QuestsSorted Action="PickUp" NameClass="TimberlingSeeds" />
+    <QuestsSorted Action="PickUp" NameClass="TimberlingSprouts" />
+    <QuestsSorted Action="PickUp" NameClass="TheGlowingFruit" />
+    <QuestsSorted Action="Pulse" NameClass="TimberlingSprouts" />
+    <QuestsSorted Action="Pulse" NameClass="TimberlingSeeds" />
+    <QuestsSorted Action="TurnIn" NameClass="TimberlingSeeds" />
+    <QuestsSorted Action="PickUp" NameClass="RellianGreenspyre" />
+    <QuestsSorted Action="TurnIn" NameClass="TheGlowingFruit" />
+    <QuestsSorted Action="TurnIn" NameClass="TimberlingSprouts" />
+    <QuestsSorted Action="PickUp" NameClass="TeldrassilTheBurdenoftheKaldorei" />
+    <QuestsSorted Action="TurnIn" NameClass="RellianGreenspyre" />
+    <QuestsSorted Action="PickUp" NameClass="MossyTumors" />
+    <QuestsSorted Action="Pulse" NameClass="MossyTumors" />
+	<QuestsSorted Action="Pulse" NameClass="TeldrassilTheBurdenoftheKaldorei" />
+    <QuestsSorted Action="PickUp" NameClass="TheEnchantedGlade" />
+    <QuestsSorted Action="PickUp" NameClass="TearsoftheMoon" />
+    <QuestsSorted Action="PickUp" NameClass="TheShimmeringFrond" />
+    <QuestsSorted Action="Pulse" NameClass="TearsoftheMoon" />
+    <QuestsSorted Action="Pulse" NameClass="TheEnchantedGlade" />
+    <QuestsSorted Action="TurnIn" NameClass="TearsoftheMoon" />
+    <QuestsSorted Action="TurnIn" NameClass="TheEnchantedGlade" />
+    <QuestsSorted Action="TurnIn" NameClass="TeldrassilTheBurdenoftheKaldorei" />
+    <QuestsSorted Action="PickUp" NameClass="TeldrassilTheComingDawn" />
+    <QuestsSorted Action="TurnIn" NameClass="MossyTumors" />
+    <QuestsSorted Action="TurnIn" NameClass="TheShimmeringFrond" />
+    <QuestsSorted Action="PickUp" NameClass="Oakenscowl" />
+    <QuestsSorted Action="Pulse" NameClass="Oakenscowl" />
+    <QuestsSorted Action="TurnIn" NameClass="Oakenscowl" />
+	<QuestsSorted Action="Pulse" NameClass="TeldrassilTheComingDawn" />
+    <QuestsSorted Action="TurnIn" NameClass="TeldrassilTheComingDawn" />
+    <QuestsSorted Action="PickUp" NameClass="BreakingWavesofChange" />
+    <QuestsSorted Action="TurnIn" NameClass="BreakingWavesofChange" />
+	<QuestsSorted NameClass="AllianceQuestsDroidz\(11-16)Darkshore.xml" Action="LoadProfile" />
+  </QuestsSorted>
+  <NpcQuest>
+    <NPCQuest Id="6780" Name="Porthannius" GameObject="false">
+      <PickUpQuests>
+        <int>2159</int>
+      </PickUpQuests>
+      <TurnInQuests />
+      <Position>
+        <X>10214.34</X>
+        <Y>700.5534</Y>
+        <Z>1360.597</Z>
+        <Type>None</Type>
+      </Position>
+    </NPCQuest>
+    <NPCQuest Id="2150" Name="Zenn Foulhoof" GameObject="false">
+      <PickUpQuests>
+        <int>488</int>
+      </PickUpQuests>
+      <TurnInQuests>
+        <int>488</int>
+        <int>489</int>
+      </TurnInQuests>
+      <Position>
+        <X>9921.281</X>
+        <Y>739.1232</Y>
+        <Z>1314.569</Z>
+        <Type>None</Type>
+      </Position>
+    </NPCQuest>
+    <NPCQuest Id="2083" Name="Syral Bladeleaf" GameObject="false">
+      <PickUpQuests>
+        <int>489</int>
+        <int>13946</int>
+        <int>997</int>
+      </PickUpQuests>
+      <TurnInQuests>
+        <int>13946</int>
+      </TurnInQuests>
+      <Position>
+        <X>9872.257</X>
+        <Y>959.2782</Y>
+        <Z>1308.069</Z>
+        <Type>None</Type>
+      </Position>
+    </NPCQuest>
+    <NPCQuest Id="3567" Name="Tallonkai Swiftroot" GameObject="false">
+      <PickUpQuests>
+        <int>2438</int>
+        <int>2459</int>
+        <int>932</int>
+      </PickUpQuests>
+      <TurnInQuests>
+        <int>2438</int>
+        <int>2459</int>
+        <int>932</int>
+      </TurnInQuests>
+      <Position>
+        <X>9890.172</X>
+        <Y>971.8316</Y>
+        <Z>1313.855</Z>
+        <Type>None</Type>
+      </Position>
+    </NPCQuest>
+    <NPCQuest Id="2078" Name="Athridas Bearmantle" GameObject="false">
+      <PickUpQuests>
+        <int>475</int>
+        <int>483</int>
+        <int>486</int>
+      </PickUpQuests>
+      <TurnInQuests>
+        <int>476</int>
+        <int>483</int>
+        <int>486</int>
+      </TurnInQuests>
+      <Position>
+        <X>9811.159</X>
+        <Y>963.6233</Y>
+        <Z>1308.782</Z>
+        <Type>None</Type>
+      </Position>
+    </NPCQuest>
+    <NPCQuest Id="6736" Name="Innkeeper Keldamyr" GameObject="false">
+      <PickUpQuests />
+      <TurnInQuests>
+        <int>2159</int>
+      </TurnInQuests>
+      <Position>
+        <X>9802.209</X>
+        <Y>982.6077</Y>
+        <Z>1313.896</Z>
+        <Type>None</Type>
+      </Position>
+    </NPCQuest>
+    <NPCQuest Id="3515" Name="Corithras Moonrage" GameObject="false">
+      <PickUpQuests>
+        <int>929</int>
+        <int>7383</int>
+        <int>933</int>
+      </PickUpQuests>
+      <TurnInQuests>
+        <int>28731</int>
+        <int>929</int>
+        <int>7383</int>
+      </TurnInQuests>
+      <Position>
+        <X>9736.91</X>
+        <Y>956.0632</Y>
+        <Z>1294.111</Z>
+        <Type>None</Type>
+      </Position>
+    </NPCQuest>
+    <NPCQuest Id="2107" Name="Gaerolas Talvethren" GameObject="false">
+      <PickUpQuests>
+        <int>476</int>
+      </PickUpQuests>
+      <TurnInQuests>
+        <int>475</int>
+      </TurnInQuests>
+      <Position>
+        <X>9845.149</X>
+        <Y>440.9301</Y>
+        <Z>1317.182</Z>
+        <Type>None</Type>
+      </Position>
+    </NPCQuest>
+    <NPCQuest Id="2081" Name="Sentinel Kyra Starsong" GameObject="false">
+      <PickUpQuests>
+        <int>13945</int>
+      </PickUpQuests>
+      <TurnInQuests>
+        <int>13945</int>
+      </TurnInQuests>
+      <Position>
+        <X>9811.601</X>
+        <Y>965.625</Y>
+        <Z>1308.777</Z>
+        <Type>None</Type>
+      </Position>
+    </NPCQuest>
+    <NPCQuest Id="42936" Name="Sentinel Cordressa Briarbow" GameObject="false">
+      <PickUpQuests>
+        <int>26383</int>
+        <int>26383</int>
+        <int>26383</int>
+      </PickUpQuests>
+      <TurnInQuests />
+      <Position>
+        <X>9682.51</X>
+        <Y>2511.49</Y>
+        <Z>1359.997</Z>
+        <Type>None</Type>
+      </Position>
+    </NPCQuest>
+    <NPCQuest Id="32973" Name="Dentaria Silverglade" GameObject="false">
+      <PickUpQuests />
+      <TurnInQuests>
+        <int>26383</int>
+        <int>26383</int>
+        <int>26383</int>
+      </TurnInQuests>
+      <Position>
+        <X>7446</X>
+        <Y>-331</Y>
+        <Z>8</Z>
+        <Type>None</Type>
+      </Position>
+    </NPCQuest>
+    <NPCQuest Id="7317" Name="Oben Rageclaw" GameObject="false">
+      <PickUpQuests>
+        <int>2541</int>
+        <int>2561</int>
+      </PickUpQuests>
+      <TurnInQuests>
+        <int>2541</int>
+        <int>2561</int>
+      </TurnInQuests>
+      <Position>
+        <X>9753.26</X>
+        <Y>1590.161</Y>
+        <Z>1300.385</Z>
+        <Type>None</Type>
+      </Position>
+    </NPCQuest>
+    <NPCQuest Id="4265" Name="Nyoma" GameObject="false">
+      <PickUpQuests>
+        <int>6344</int>
+      </PickUpQuests>
+      <TurnInQuests>
+        <int>6343</int>
+      </TurnInQuests>
+      <Position>
+        <X>9752.107</X>
+        <Y>902.6951</Y>
+        <Z>1295.517</Z>
+        <Type>None</Type>
+      </Position>
+    </NPCQuest>
+    <NPCQuest Id="40553" Name="Fidelio" GameObject="false">
+      <PickUpQuests>
+        <int>6341</int>
+      </PickUpQuests>
+      <TurnInQuests>
+        <int>6344</int>
+      </TurnInQuests>
+      <Position>
+        <X>9873.028</X>
+        <Y>976.4879</Y>
+        <Z>1309.921</Z>
+        <Type>None</Type>
+      </Position>
+    </NPCQuest>
+    <NPCQuest Id="7316" Name="Sister Aquinne" GameObject="false">
+      <PickUpQuests>
+        <int>6342</int>
+      </PickUpQuests>
+      <TurnInQuests>
+        <int>6341</int>
+      </TurnInQuests>
+      <Position>
+        <X>9915.082</X>
+        <Y>2632.117</Y>
+        <Z>1316.788</Z>
+        <Type>None</Type>
+      </Position>
+    </NPCQuest>
+    <NPCQuest Id="40552" Name="Leora" GameObject="false">
+      <PickUpQuests>
+        <int>6343</int>
+      </PickUpQuests>
+      <TurnInQuests>
+        <int>6342</int>
+      </TurnInQuests>
+      <Position>
+        <X>9973.317</X>
+        <Y>2623.924</Y>
+        <Z>1316.599</Z>
+        <Type>None</Type>
+      </Position>
+    </NPCQuest>
+    <NPCQuest Id="2151" Name="Moon Priestess Amara" GameObject="false">
+      <PickUpQuests>
+        <int>487</int>
+      </PickUpQuests>
+      <TurnInQuests>
+        <int>487</int>
+      </TurnInQuests>
+      <Position>
+        <X>10098.17</X>
+        <Y>1335.872</Y>
+        <Z>1314.175</Z>
+        <Type>None</Type>
+      </Position>
+    </NPCQuest>
+    <NPCQuest Id="2080" Name="Denalan" GameObject="false">
+      <PickUpQuests>
+        <int>918</int>
+        <int>919</int>
+        <int>922</int>
+        <int>2499</int>
+      </PickUpQuests>
+      <TurnInQuests>
+        <int>997</int>
+        <int>918</int>
+        <int>930</int>
+        <int>919</int>
+        <int>931</int>
+        <int>2499</int>
+      </TurnInQuests>
+      <Position>
+        <X>9507.291</X>
+        <Y>714.583</Y>
+        <Z>1255.886</Z>
+        <Type>None</Type>
+      </Position>
+    </NPCQuest>
+    <NPCQuest Id="6751" Name="Strange Fruited Plant" GameObject="true">
+      <PickUpQuests>
+        <int>930</int>
+      </PickUpQuests>
+      <TurnInQuests />
+      <Position>
+        <X>9386.179</X>
+        <Y>846.3346</Y>
+        <Z>1259.466</Z>
+        <Type>None</Type>
+      </Position>
+    </NPCQuest>
+    <NPCQuest Id="3517" Name="Rellian Greenspyre" GameObject="false">
+      <PickUpQuests>
+        <int>923</int>
+      </PickUpQuests>
+      <TurnInQuests>
+        <int>922</int>
+        <int>923</int>
+      </TurnInQuests>
+      <Position>
+        <X>10118.34</X>
+        <Y>1652.748</Y>
+        <Z>1324.387</Z>
+        <Type>None</Type>
+      </Position>
+    </NPCQuest>
+    <NPCQuest Id="3519" Name="Sentinel Arynia Cloudsbreak" GameObject="false">
+      <PickUpQuests>
+        <int>937</int>
+      </PickUpQuests>
+      <TurnInQuests>
+        <int>937</int>
+      </TurnInQuests>
+      <Position>
+        <X>10678.44</X>
+        <Y>1914.682</Y>
+        <Z>1339.155</Z>
+        <Type>None</Type>
+      </Position>
+    </NPCQuest>
+    <NPCQuest Id="7313" Name="Priestess A'moora" GameObject="false">
+      <PickUpQuests>
+        <int>2518</int>
+      </PickUpQuests>
+      <TurnInQuests>
+        <int>2518</int>
+      </TurnInQuests>
+      <Position>
+        <X>10676.9</X>
+        <Y>1933.958</Y>
+        <Z>1336.111</Z>
+        <Type>None</Type>
+      </Position>
+    </NPCQuest>
+    <NPCQuest Id="6752" Name="Strange Fruited Plant" GameObject="true">
+      <PickUpQuests>
+        <int>931</int>
+      </PickUpQuests>
+      <TurnInQuests />
+      <Position>
+        <X>10845.77</X>
+        <Y>2046.179</Y>
+        <Z>1327.137</Z>
+        <Type>None</Type>
+      </Position>
+    </NPCQuest>
+    <NPCQuest Id="1992" Name="Tarindrella" GameObject="false">
+      <PickUpQuests />
+      <TurnInQuests>
+        <int>933</int>
+      </TurnInQuests>
+      <Position>
+        <X>9569.259</X>
+        <Y>1737.335</Y>
+        <Z>1292.746</Z>
+        <Type>None</Type>
+      </Position>
+    </NPCQuest>
+  </NpcQuest>
+  <Npc>
+    <Npc>
+      <SelectGossipOption>1</SelectGossipOption>
+      <Entry>3610</Entry>
+      <Name>Jeena Featherbow</Name>
+      <Position>
+        <X>9833.746</X>
+        <Y>969.0191</Y>
+        <Z>1308.689</Z>
+        <Type />
+      </Position>
+      <Faction>Neutral</Faction>
+      <Type>None</Type>
+      <ContinentId>Kalimdor</ContinentId>
+    </Npc>
+    <Npc>
+      <SelectGossipOption>1</SelectGossipOption>
+      <Entry>4266</Entry>
+      <Name>Danlyia</Name>
+      <Position>
+        <X>9890.174</X>
+        <Y>994.6727</Y>
+        <Z>1313.833</Z>
+        <Type />
+      </Position>
+      <Faction>Neutral</Faction>
+      <Type>None</Type>
+      <ContinentId>Kalimdor</ContinentId>
+    </Npc>
+  </Npc>
+  <Blackspots>
+    <Blackspot X="10101.86" Y="1189.235" Z="1309.883" Radius="10.02625" />
+  </Blackspots>
+</QuesterProfile>

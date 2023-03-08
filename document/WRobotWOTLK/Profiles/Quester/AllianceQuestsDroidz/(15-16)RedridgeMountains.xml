@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<QuesterProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <QuestFile>AllianceQuestsDroidz\(15-16)RedridgeMountains_classes.cs</QuestFile>
+  <QuestsSorted>
+    <QuestsSorted Action="PickUp" NameClass="WantedRedridgeGnolls" />
+    <QuestsSorted Action="TurnIn" NameClass="HerosCallRedridgeMountains" />
+	<QuestsSorted Action="PickUp" NameClass="StillAssessingtheThreat" />
+    <QuestsSorted Action="PickUp" NameClass="StillAssessingtheThreat" />
+    <QuestsSorted Action="Pulse" NameClass="FranksandBeans" />
+    <QuestsSorted Action="Pulse" NameClass="FranksandBeansObjectif2" />
+    <QuestsSorted Action="Pulse" NameClass="FranksandBeansObjectif3" />
+    <QuestsSorted Action="Pulse" NameClass="StillAssessingtheThreat" />
+    <QuestsSorted Action="Pulse" NameClass="StillAssessingtheThreatObjectif2" />
+    <QuestsSorted Action="Pulse" NameClass="StillAssessingtheThreatObjectif3" />
+    <QuestsSorted Action="Pulse" NameClass="WantedRedridgeGnolls" />
+    <QuestsSorted Action="TurnIn" NameClass="FranksandBeans" />
+    <QuestsSorted Action="TurnIn" NameClass="StillAssessingtheThreat" />
+    <QuestsSorted Action="TurnIn" NameClass="WantedRedridgeGnolls" />
+    <QuestsSorted Action="PickUp" NameClass="ParkersReport" />
+    <QuestsSorted Action="TurnIn" NameClass="ParkersReport" />
+    <QuestsSorted Action="TurnIn" NameClass="ThreattotheKingdom" />
+	<QuestsSorted NameClass="Profile finish, stop bot" Action="MessageBox" />
+    <QuestsSorted NameClass="" Action="StopBot" />
+  </QuestsSorted>
+  <NpcQuest>
+    <NPCQuest Id="204344" Name="Wanted!" GameObject="true">
+      <PickUpQuests>
+        <int>26504</int>
+      </PickUpQuests>
+      <TurnInQuests />
+      <Position>
+        <X>-9620.541</X>
+        <Y>-1891.175</Y>
+        <Z>58.92093</Z>
+        <Type>None</Type>
+      </Position>
+    </NPCQuest>
+    <NPCQuest Id="379" Name="Darcy Parker" GameObject="false">
+      <PickUpQuests>
+        <int>26506</int>
+      </PickUpQuests>
+      <TurnInQuests>
+        <int>26506</int>
+      </TurnInQuests>
+      <Position>
+        <X>-9633.35</X>
+        <Y>-1880.43</Y>
+        <Z>61.8198</Z>
+        <Type>None</Type>
+      </Position>
+    </NPCQuest>
+    <NPCQuest Id="464" Name="Watch Captain Parker" GameObject="false">
+      <PickUpQuests>
+        <int>26503</int>
+        <int>26505</int>
+      </PickUpQuests>
+      <TurnInQuests>
+        <int>26503</int>
+        <int>26504</int>
+		<int>26365</int>
+		<int>28563</int>
+      </TurnInQuests>
+      <Position>
+        <X>-9620.8</X>
+        <Y>-1872.82</Y>
+        <Z>99.2484</Z>
+        <Type>None</Type>
+      </Position>
+    </NPCQuest>
+    <NPCQuest Id="344" Name="Magistrate Solomon" GameObject="false">
+      <PickUpQuests />
+      <TurnInQuests>
+        <int>26505</int>
+        <int>26761</int>
+      </TurnInQuests>
+      <Position>
+        <X>-9218.61</X>
+        <Y>-2221.804</Y>
+        <Z>67.53965</Z>
+        <Type>None</Type>
+      </Position>
+    </NPCQuest>
+  </NpcQuest>
+  <Npc>
+    <Npc>
+      <SelectGossipOption>1</SelectGossipOption>
+      <Entry>956</Entry>
+      <Name>Dorin Songblade</Name>
+      <Position>
+        <X>-9247.676</X>
+        <Y>-2240.278</Y>
+        <Z>63.93378</Z>
+        <Type />
+      </Position>
+      <Faction>Neutral</Faction>
+      <Type>Repair</Type>
+      <ContinentId>Azeroth</ContinentId>
+    </Npc>
+    <Npc>
+      <SelectGossipOption>1</SelectGossipOption>
+      <Entry>5620</Entry>
+      <Name>Bartender Wental</Name>
+      <Position>
+        <X>-9210.828</X>
+        <Y>-2150.71</Y>
+        <Z>64.35413</Z>
+        <Type />
+      </Position>
+      <Faction>Neutral</Faction>
+      <Type>Vendor</Type>
+      <ContinentId>Azeroth</ContinentId>
+    </Npc>
+  </Npc>
+  <Blackspots>
+    <Blackspot X="-10514" Y="1045" Z="60" Radius="2" />
+  </Blackspots>
+</QuesterProfile>

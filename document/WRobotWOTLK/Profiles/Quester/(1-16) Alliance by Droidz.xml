@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<QuesterProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <QuestFile />
+  <QuestsSorted>
+    <QuestsSorted NameClass="ObjectManager.Me.Level &gt; 17 || ObjectManager.Me.IsHorde" Action="If" />
+		<QuestsSorted NameClass="This profile is for Alliance and level smaller than 17" Action="MessageBox" />
+		<QuestsSorted NameClass="" Action="StopBot" />
+    <QuestsSorted NameClass="" Action="EndIf" />
+	
+    <QuestsSorted NameClass="ObjectManager.Me.PlayerRace == PlayerFactions.Human" Action="If" />
+	
+		<QuestsSorted NameClass="ObjectManager.Me.Level &lt;= 5" Action="If" />
+			<QuestsSorted NameClass="AllianceQuestsDroidz\(01-05)Human.xml" Action="LoadProfile" />
+		<QuestsSorted NameClass="" Action="EndIf" />
+		
+		<QuestsSorted NameClass="ObjectManager.Me.Level &gt;= 5 &amp;&amp; ObjectManager.Me.Level &lt;= 7" Action="If" />
+			<QuestsSorted NameClass="AllianceQuestsDroidz\(05-07)ElwynnForest.xml" Action="LoadProfile" />
+		<QuestsSorted NameClass="" Action="EndIf" />
+		
+		<QuestsSorted NameClass="ObjectManager.Me.Level &gt;= 7 &amp;&amp; ObjectManager.Me.Level &lt;= 11" Action="If" />
+			<QuestsSorted NameClass="AllianceQuestsDroidz\(07-10)ElwynnForest.xml" Action="LoadProfile" />
+		<QuestsSorted NameClass="" Action="EndIf" />
+		
+		<QuestsSorted NameClass="ObjectManager.Me.Level &gt;= 10 &amp;&amp; ObjectManager.Me.Level &lt;= 15" Action="If" />
+			<QuestsSorted NameClass="AllianceQuestsDroidz\(10-15)Westfall.xml" Action="LoadProfile" />
+		<QuestsSorted NameClass="" Action="EndIf" />
+		
+		<QuestsSorted NameClass="ObjectManager.Me.Level &gt;= 15" Action="If" />
+			<QuestsSorted NameClass="AllianceQuestsDroidz\(15-16)RedridgeMountains.xml" Action="LoadProfile" />
+		<QuestsSorted NameClass="" Action="EndIf" />
+	
+	<QuestsSorted NameClass="" Action="EndIf" />
+	
+	<QuestsSorted NameClass="ObjectManager.Me.PlayerRace == PlayerFactions.NightElf" Action="If" />
+	
+		<QuestsSorted NameClass="ObjectManager.Me.Level &lt;= 5" Action="If" />
+			<QuestsSorted NameClass="AllianceQuestsDroidz\(01-05)NightElf.xml" Action="LoadProfile" />
+		<QuestsSorted NameClass="" Action="EndIf" />
+		
+		<QuestsSorted NameClass="ObjectManager.Me.Level &gt;= 5 &amp;&amp; ObjectManager.Me.Level &lt;= 12" Action="If" />
+			<QuestsSorted NameClass="AllianceQuestsDroidz\(05-11)Teldrassil.xml" Action="LoadProfile" />
+		<QuestsSorted NameClass="" Action="EndIf" />
+		
+		<QuestsSorted NameClass="ObjectManager.Me.Level &gt;= 11" Action="If" />
+			<QuestsSorted NameClass="AllianceQuestsDroidz\(11-16)Darkshore.xml" Action="LoadProfile" />
+		<QuestsSorted NameClass="" Action="EndIf" />
+	
+	<QuestsSorted NameClass="" Action="EndIf" />
+	
+    <QuestsSorted NameClass="No found subProfile for your Character (this profile is for Humain and Night Elf level 1 to 16" Action="MessageBox" />
+    <QuestsSorted NameClass="" Action="StopBot" />
+  </QuestsSorted>
+  <NpcQuest />
+  <Npc />
+  <Blackspots />
+</QuesterProfile>
