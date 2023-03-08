@@ -137,4 +137,7 @@ public class Main {
 </details>
 
 # 分析
-发现 WRobotWOTLK\Bin\wManager.dll 应该被破解程序发布者做过手脚，在不本地部署代码只删除掉 wManager.dll 内几处代码后正常启动。
+研究过后发现 WRobotWOTLK\Bin\wManager.dll 应该被破解程序发布者做过手脚，在不本地部署代码只删除掉 wManager.dll 内几处代码后正常启动。
+
+# 个人推测
+此破解程序由于是用于魔兽世界的私人服务器，私人服务器提供的登陆器大多数会被杀毒软件提示病毒而让游戏者关闭杀毒，故破解程序发布者很可能是通过设置多个障碍来在一个小范围内寻找合适的猎物。
