@@ -1,0 +1,600 @@
+﻿<?xml version="1.0" encoding="utf-16"?>
+<FightClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <FightClassGeneralSettings>
+    <FightClassName>Mage - Frost BR</FightClassName>
+    <Range>40</Range>
+    <PetCallSpellName>Summon Water Elemental</PetCallSpellName>
+    <PetReviveSpellName>Summon Water Elemental</PetReviveSpellName>
+    <FramePerSecond>25</FramePerSecond>
+  </FightClassGeneralSettings>
+  <FightClassSpells>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>LuaScript</ContionType>
+          <Param xsi:type="FightClassConditionLua">
+            <LuaScript>
+--[[ Ice Block ]]
+	local idIceBlock=45438
+	local spellname=GetSpellInfo(idIceBlock)
+	local name,_,_,count = UnitBuff("player",spellname)
+	if name and ((UnitHealth("player") / UnitHealthMax("player") * 100) &gt; 80) then
+		CancelUnitBuff("player",spellname)
+		result=true
+	end
+</LuaScript>
+            <VarRet>result</VarRet>
+            <ValueRet>true</ValueRet>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>-- cancel Ice Block</SpellName>
+      <Priority>24</Priority>
+      <CombatOnly>false</CombatOnly>
+      <CheckIfKnow>false</CheckIfKnow>
+      <CheckIfSpellUsable>false</CheckIfSpellUsable>
+      <CheckSpellDistance>false</CheckSpellDistance>
+      <CheckIfView>false</CheckIfView>
+      <AddToSettings>true</AddToSettings>
+      <NotSpellIsLuaScript>true</NotSpellIsLuaScript>
+      <CastOnSelf>true</CastOnSelf>
+      <WaitDuringCasting>false</WaitDuringCasting>
+      <CastOn>player</CastOn>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>LuaScript</ContionType>
+          <Param xsi:type="FightClassConditionLua">
+            <LuaScript>
+--[[ Ice Block ]]
+	local spellname=GetSpellInfo(45438)
+	local name,_,_,count = UnitBuff("player",spellname)
+	if name then
+		result=true
+	end
+</LuaScript>
+            <VarRet>result</VarRet>
+            <ValueRet>true</ValueRet>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>-- Ice Blocked</SpellName>
+      <Priority>23</Priority>
+      <CombatOnly>false</CombatOnly>
+      <CheckIfKnow>false</CheckIfKnow>
+      <CheckIfSpellUsable>false</CheckIfSpellUsable>
+      <CheckSpellDistance>false</CheckSpellDistance>
+      <CheckIfView>false</CheckIfView>
+      <NotSpellIsLuaScript>true</NotSpellIsLuaScript>
+      <CastOnSelf>true</CastOnSelf>
+      <WaitDuringCasting>false</WaitDuringCasting>
+      <CastOn>player</CastOn>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>HealthPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>SmallerOrEqual</Type>
+            <Value>10</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Ice Block</SpellName>
+      <Priority>22</Priority>
+      <CheckSpellDistance>false</CheckSpellDistance>
+      <CheckIfView>false</CheckIfView>
+      <AddToSettings>true</AddToSettings>
+      <CastOnSelf>true</CastOnSelf>
+      <CastOn>player</CastOn>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>LuaScript</ContionType>
+          <Param xsi:type="FightClassConditionLua">
+            <LuaScript>
+if UnitExists("target") and not UnitIsFriend("player", "target") then 
+	local spell, rank, displayName, icon, startTime, endTime, isTradeSkill, castID, nonInterrupt = UnitCastingInfo("target");
+	if (spell==nil) then
+		spell, displayName, icon, startTime, endTime, isTradeSkill, castID, nonInterrupt = UnitChannelInfo("target");
+	end
+	if (spell~=nil) then
+		if (nonInterrupt==false) then 
+			local now=GetTime();
+			local guid=UnitGUID("target");
+			local type, zero, serverId, instanceId, zoneId, npcId, spawnUid = strsplit("-",guid);
+			local dontKick={[82618]={171807};	--[[ Tor'goroth, skip Shadow Bolt to kick Consume Life ]]
+							[82682]={166465};	--[[ Archmage Sol, skip Frost Bolt to kick Parasitic Growth ]]
+								
+	--[[ [86135]={172014,172024,172005};  test Ralshira  ]]
+
+						};
+			result=true;
+			npcId=tonumber(npcId);
+			if (dontKick[npcId]~=nil) then
+				if (dontKick[npcId][1]~=nil) then
+					for i=1, #dontKick[npcId] do
+						if (spell==GetSpellInfo(dontKick[npcId][i])) then
+							result=false
+						end
+					end
+				end
+			end
+		end
+	end
+end
+</LuaScript>
+            <VarRet>result</VarRet>
+            <ValueRet>true</ValueRet>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Counterspell</SpellName>
+      <Priority>21</Priority>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>CSharpCode</ContionType>
+          <Param xsi:type="FightClassConditionString">
+            <Value>(!ObjectManager.Pet.IsValid || ObjectManager.Pet.IsDead)</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Summon Water Elemental</SpellName>
+      <Priority>20</Priority>
+      <CheckSpellDistance>false</CheckSpellDistance>
+      <CheckIfView>false</CheckIfView>
+      <AddToSettings>true</AddToSettings>
+      <Timer>3000</Timer>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Ice Barrier</Name>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Ice Barrier</SpellName>
+      <Priority>19</Priority>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>HostileUnitNearTarget</ContionType>
+          <Param xsi:type="FightClassConditionUnitNear">
+            <Number>2</Number>
+            <Type>BiggerOrEqual</Type>
+            <Radius>8</Radius>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Freeze</SpellName>
+      <Priority>18</Priority>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>MeInMove</ContionType>
+          <Param xsi:type="FightClassConditionBool" />
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>LuaScript</ContionType>
+          <Param xsi:type="FightClassConditionLua">
+            <LuaScript>
+if UnitExists("target") and not UnitIsFriend("player", "target") then
+--[[ Icy Veins ]]
+	local spellname=GetSpellInfo(12472)
+	local name,_,_,count = UnitBuff("player",spellname)
+	if name then
+		result=true
+	end
+end
+</LuaScript>
+            <VarRet>result</VarRet>
+            <ValueRet>true</ValueRet>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>HaveTarget</ContionType>
+          <Param xsi:type="FightClassConditionBool">
+            <Value>true</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Rune of Power</SpellName>
+      <Priority>17</Priority>
+      <CanMoveDuringCast>Yes</CanMoveDuringCast>
+      <WaitDuringCasting>false</WaitDuringCasting>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>LuaScript</ContionType>
+          <Param xsi:type="FightClassConditionLua">
+            <LuaScript>
+if UnitExists("target") and not UnitIsFriend("player", "target") then
+--[[ Icy Veins ]]
+	local spellname=GetSpellInfo(12472)
+	local name,_,_,count = UnitBuff("player",spellname)
+	result=true
+	if name then
+		result=false
+	end
+end
+</LuaScript>
+            <VarRet>result</VarRet>
+            <ValueRet>true</ValueRet>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Icy Veins</SpellName>
+      <Priority>16</Priority>
+      <CanMoveDuringCast>Yes</CanMoveDuringCast>
+      <WaitDuringCasting>false</WaitDuringCasting>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Rune of Power</Name>
+            <Need>true</Need>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>MeInMove</ContionType>
+          <Param xsi:type="FightClassConditionBool" />
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Ray of Frost</SpellName>
+      <Priority>15</Priority>
+      <CanMoveDuringCast>Yes</CanMoveDuringCast>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>MeInCombat</ContionType>
+          <Param xsi:type="FightClassConditionBool">
+            <Value>true</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>MeInMove</ContionType>
+          <Param xsi:type="FightClassConditionBool">
+            <Value>true</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Ice Floes</Name>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>IsFacing</ContionType>
+          <Param xsi:type="FightClassConditionBool">
+            <Value>true</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>TargetDistance</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>SmallerOrEqual</Type>
+            <Value>35</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Ice Floes</SpellName>
+      <Priority>14</Priority>
+      <CheckSpellDistance>false</CheckSpellDistance>
+      <CastOnSelf>true</CastOnSelf>
+      <CastOn>player</CastOn>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>LuaScript</ContionType>
+          <Param xsi:type="FightClassConditionLua">
+            <LuaScript>
+if UnitExists("target") and not UnitIsFriend("player", "target") then
+--[[ Icy Veins ]]
+	local spellname=GetSpellInfo(12472)
+	local name,_,_,count = UnitBuff("player",spellname)
+	if name then
+		result=true
+	end
+end
+</LuaScript>
+            <VarRet>result</VarRet>
+            <ValueRet>true</ValueRet>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Mirror Image</SpellName>
+      <Priority>13</Priority>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>TargetIsElite</ContionType>
+          <Param xsi:type="FightClassConditionBool">
+            <Value>true</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>HealthPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>Bigger</Type>
+            <Value>50</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Frost Bomb</SpellName>
+      <Priority>12</Priority>
+      <CanMoveDuringCast>Yes</CanMoveDuringCast>
+      <WaitDuringCasting>false</WaitDuringCasting>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>IsFacing</ContionType>
+          <Param xsi:type="FightClassConditionBool">
+            <Value>true</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Frozen Orb</SpellName>
+      <Priority>11</Priority>
+      <CanMoveDuringCast>Yes</CanMoveDuringCast>
+      <WaitDuringCasting>false</WaitDuringCasting>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>LuaScript</ContionType>
+          <Param xsi:type="FightClassConditionLua">
+            <LuaScript>
+if UnitExists("target") and not UnitIsFriend("player", "target") then
+--[[ Fingers of Frost ]]
+	local spellname=GetSpellInfo(112965)
+	local name,_,_,count = UnitBuff("player",spellname)
+	result=true
+	if name then
+		result=false
+	end
+end
+</LuaScript>
+            <VarRet>result</VarRet>
+            <ValueRet>true</ValueRet>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Frozen Touch</SpellName>
+      <Priority>10</Priority>
+      <CanMoveDuringCast>Yes</CanMoveDuringCast>
+      <WaitDuringCasting>false</WaitDuringCasting>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>IsFacing</ContionType>
+          <Param xsi:type="FightClassConditionBool">
+            <Value>true</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>LuaScript</ContionType>
+          <Param xsi:type="FightClassConditionLua">
+            <LuaScript>
+if UnitExists("target") and not UnitIsFriend("player", "target") then
+--[[ Fingers of Frost ]]
+	local spellname=GetSpellInfo(112965)
+	local name,_,_,count = UnitBuff("player",spellname)
+	if name then 
+		if (count&gt;=2) then
+			result=true
+		end
+	end
+end
+</LuaScript>
+            <VarRet>result</VarRet>
+            <ValueRet>true</ValueRet>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Ice Lance</SpellName>
+      <Priority>9</Priority>
+      <CheckIfSpellUsable>false</CheckIfSpellUsable>
+      <CanMoveDuringCast>Yes</CanMoveDuringCast>
+      <WaitDuringCasting>false</WaitDuringCasting>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>MeInMove</ContionType>
+          <Param xsi:type="FightClassConditionBool" />
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>IsFacing</ContionType>
+          <Param xsi:type="FightClassConditionBool">
+            <Value>true</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>LuaScript</ContionType>
+          <Param xsi:type="FightClassConditionLua">
+            <LuaScript>
+if UnitExists("target") and not UnitIsFriend("player", "target") then
+--[[ Brain Freeze ]]
+	local spellname=GetSpellInfo(190447)
+	local name,_,_,count = UnitBuff("player",spellname)
+	if name then
+		result=true
+	end
+end
+</LuaScript>
+            <VarRet>result</VarRet>
+            <ValueRet>true</ValueRet>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>LuaScript</ContionType>
+          <Param xsi:type="FightClassConditionLua">
+            <LuaScript>
+if UnitExists("target") and not UnitIsFriend("player", "target") then
+--[[ Fingers of Frost ]]
+	local spellname=GetSpellInfo(112965)
+	local name,_,_,count = UnitBuff("player",spellname)
+	result=true
+	if name then
+		result=false
+	end
+end
+</LuaScript>
+            <VarRet>result</VarRet>
+            <ValueRet>true</ValueRet>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Flurry</SpellName>
+      <Priority>8</Priority>
+      <CanMoveDuringCast>Yes</CanMoveDuringCast>
+      <WaitDuringCasting>false</WaitDuringCasting>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>IsFacing</ContionType>
+          <Param xsi:type="FightClassConditionBool">
+            <Value>true</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>LuaScript</ContionType>
+          <Param xsi:type="FightClassConditionLua">
+            <LuaScript>
+if UnitExists("target") and not UnitIsFriend("player", "target") then
+--[[ Brain Freeze ]]
+	local spellname=GetSpellInfo(190447)
+	local name,_,_,count = UnitBuff("player",spellname)
+	if name then
+		result=true
+	end
+end
+</LuaScript>
+            <VarRet>result</VarRet>
+            <ValueRet>true</ValueRet>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Ice Lance</SpellName>
+      <Priority>7</Priority>
+      <CanMoveDuringCast>Yes</CanMoveDuringCast>
+      <WaitDuringCasting>false</WaitDuringCasting>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>LuaScript</ContionType>
+          <Param xsi:type="FightClassConditionLua">
+            <LuaScript>
+if UnitExists("target") and not UnitIsFriend("player", "target") then
+--[[ Fingers of Frost ]]
+	local spellname=GetSpellInfo(112965)
+	local name,_,_,count = UnitBuff("player",spellname)
+	result=true
+	if name then
+		result=false
+	end
+end
+</LuaScript>
+            <VarRet>result</VarRet>
+            <ValueRet>true</ValueRet>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>HavePet</ContionType>
+          <Param xsi:type="FightClassConditionBool">
+            <Value>true</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Water Jet</SpellName>
+      <Priority>6</Priority>
+      <CanMoveDuringCast>Yes</CanMoveDuringCast>
+      <WaitDuringCasting>false</WaitDuringCasting>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions />
+      <SpellName>Ice Nova</SpellName>
+      <CanMoveDuringCast>Yes</CanMoveDuringCast>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>HostileUnitNearTarget</ContionType>
+          <Param xsi:type="FightClassConditionUnitNear">
+            <Number>4</Number>
+            <Type>BiggerOrEqual</Type>
+            <Radius>8</Radius>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Blizzard</SpellName>
+      <Priority>4</Priority>
+      <AOESpell>true</AOESpell>
+      <CanMoveDuringCast>Yes</CanMoveDuringCast>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>LuaScript</ContionType>
+          <Param xsi:type="FightClassConditionLua">
+            <LuaScript>
+if UnitExists("target") and not UnitIsFriend("player", "target") then
+--[[ Fingers of Frost ]]
+	local spellname=GetSpellInfo(112965)
+	local name,_,_,count = UnitBuff("player",spellname)
+	if name then
+		if (count==1) then
+			result=true
+		end
+	end
+end
+</LuaScript>
+            <VarRet>result</VarRet>
+            <ValueRet>true</ValueRet>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Ice Lance</SpellName>
+      <Priority>3</Priority>
+      <CanMoveDuringCast>Yes</CanMoveDuringCast>
+      <WaitDuringCasting>false</WaitDuringCasting>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions />
+      <SpellName>Glacial Spike</SpellName>
+      <Priority>2</Priority>
+      <CanMoveDuringCast>Yes</CanMoveDuringCast>
+      <WaitDuringCasting>false</WaitDuringCasting>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>IsFacing</ContionType>
+          <Param xsi:type="FightClassConditionBool">
+            <Value>true</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Frostbolt</SpellName>
+      <Priority>1</Priority>
+    </FightClassSpell>
+  </FightClassSpells>
+</FightClass>
