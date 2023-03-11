@@ -15,7 +15,7 @@
 <summary><code><strong>「 点击查看下载地址」</strong></code></summary>
 
 破解版WRobot验证端  解压密码：1234567890 
-**[Download latest](https://github.com/elseif2023/Wrobot/blob/main/document/%E7%A0%B4%E8%A7%A3%E7%89%88WRobot%E9%AA%8C%E8%AF%81%E7%AB%AF.rar)**
+**[Download](https://github.com/elseif2023/Wrobot/blob/main/document/%E7%A0%B4%E8%A7%A3%E7%89%88WRobot%E9%AA%8C%E8%AF%81%E7%AB%AF.rar)**
 
 查毒检测报告：https://www.virustotal.com/gui/file/7f5703e57194fded6e5588ad54be0b5896009e51c41c6eeaca738a8f77bcb2e7
 
