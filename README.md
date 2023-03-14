@@ -148,9 +148,7 @@ public class Main {
 此软件涉及屏幕截图和通过Web请求发送图像数据，这绝不是正常软件会做的事。
 
 ### 结论
-在火绒安全提交了样本后，由火绒安全人工认定此破解程序为木马 
-
-火绒安全提交处理结果 https://bbs.huorong.cn/forum.php?mod=viewthread&tid=122996
+在火绒安全提交了样本后，由火绒安全人工认定此破解程序为木马，处理结果 `https://bbs.huorong.cn/forum.php?mod=viewthread&tid=122996`
 
 ```
 病毒名称：Trojan/Agent.bbp
