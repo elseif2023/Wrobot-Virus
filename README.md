@@ -5,14 +5,14 @@
 通过搜索引擎发现此破解程序的作者多年来在很多与魔兽世界相关的 中/英 论坛上发布过此破解程序的推广信息。
 
 <details>
-<summary><code><strong>「 点击查看」</strong></code></summary>
+<summary><code><strong>「点击查看」</strong></code></summary>
 <img src="https://github.com/elseif2023/Wrobot/blob/main/picture/1.PNG?raw=true" width=30%  />
 <img src="https://github.com/elseif2023/Wrobot/blob/main/picture/2.PNG?raw=true" width=30%  />
 <img src="https://github.com/elseif2023/Wrobot/blob/main/picture/3.PNG?raw=true" width=30%  />
 </details>
 
 <details>
-<summary><code><strong>「 点击查看下载地址」</strong></code></summary>
+<summary><code><strong>「点击查看下载地址」</strong></code></summary>
 
 破解版WRobot验证端  解压密码：1234567890 
 **[Download](https://github.com/elseif2023/Wrobot/blob/main/document/%E7%A0%B4%E8%A7%A3%E7%89%88WRobot%E9%AA%8C%E8%AF%81%E7%AB%AF.rar)**
@@ -42,7 +42,7 @@
 成功登录到 破解版WRobot验证端 后，启动魔兽世界并进入游戏在启动由破解程序发布者提供的 WRobotWOTLK/WRobot.exe 进行激活 在使用过程中通过截取数据获得了下列内容
 
 <details>
-<summary><code><strong>「 点击查看截取信息」</strong></code></summary>
+<summary><code><strong>「点击查看截取信息」</strong></code></summary>
 
 ```C#
 public class Main {
@@ -120,7 +120,7 @@ if (System.IO.File.Exists(@fullScreenShotPath + ".jpg"))
 修改截取的内容后获得下面的代码，并将解析地址由 43.252.229.37 tumadre.000webhostapp.com 改为 127.0.0.1 tumadre.000webhostapp.com 在本地部署代码后 WRobot.exe 程序激活成功，并且功能正常。
 
 <details>
-<summary><code><strong>「 点击查看修改后的代码」</strong></code></summary>
+<summary><code><strong>「点击查看修改后的代码」</strong></code></summary>
 
 ```C#
 public class Main {
@@ -145,3 +145,11 @@ public class Main {
 应该是出于获利的目的 43.252.229.37 这个用于验证的IP并不是时刻都能使用(根本不需要，即便需要也不存在所谓流量过大)，从而诱导使用者付费。一旦 43.252.229.37 此验证IP无法验证，那么也无法截取到任何有效内容。
 
 此软件涉及屏幕截图和通过Web请求发送图像数据，这绝对不是正常软件会做的事。
+
+# 后续
+在经过火绒安全论坛提交了样本后，由于火绒安全认定，此破解程序为木马
+
+<details>
+<summary><code><strong>「点击查看」</strong></code></summary>
+<img src="https://github.com/elseif2023/Wrobot/blob/main/picture/Screenshot_2023-03-14_13-02-20.PNG?raw=true" width=30%  />
+</details>
