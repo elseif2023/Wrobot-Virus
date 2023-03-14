@@ -151,5 +151,5 @@ public class Main {
 
 <details>
 <summary><code><strong>「点击查看」</strong></code></summary>
-<img src="https://github.com/elseif2023/Wrobot/blob/main/picture/Screenshot_2023-03-14_13-02-20.PNG?raw=true" width=30%  />
+<img src="https://github.com/elseif2023/Wrobot/blob/main/picture/Screenshot_2023-03-14_13-02-20.png?raw=true" width=30%  />
 </details>
