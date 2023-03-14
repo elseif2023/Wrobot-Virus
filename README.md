@@ -1,10 +1,10 @@
-# Wrobot 后门木马
+# Wrobot 木马
 
 前不久获得一份WRobot的破解版程序，该程序用于魔兽世界脚本Bot。在测试环境中发现一些不寻常的地方，多次与破解程序发布者联系无果后我将所掌握的内容发布在此。
 
 通过搜索引擎发现此破解程序的作者多年来在很多与魔兽世界相关的 中/英 论坛上发布过此破解程序的推广信息。
 
-后门木马传播涉事QQ 8171974 287228864 401979123 QQ群 6456089
+木马传播涉事QQ号 8171974 287228864 401979123  QQ群 6456089
 
 <details>
 <summary><code><strong>「点击查看」</strong></code></summary>
@@ -23,21 +23,21 @@
 
 </details>
 
-
 当使用者使用 破解版WRobot验证端.exe 时会触发下列动作
 
 1. 获取使用者的QQ和QQ群，如果未启动QQ会提示具有误导性的错误提示。当使用者关闭 破解版WRobot验证端.exe 然后登录QQ并再次启动 破解版WRobot验证端.exe 点击登录会获取使用者的QQ和QQ群，如果使用者在该程序发布者的QQ群内那么登录成功。否则则提示之前的误导性错误提示。
 
 2. 改并添加下列内容到计算机上的hosts文件内，将使用者解析目标网站上
-
-* #==== 下面两行是破解版WR转向服务器IP ====
-* 43.252.229.37 tumadre.000webhostapp.com 
-* 127.0.0.1 download.wrobot.eu
+```
+#==== 下面两行是破解版WR转向服务器IP ====
+43.252.229.37 tumadre.000webhostapp.com
+127.0.0.1 download.wrobot.eu
+```
 
 通过访问 43.252.229.37 发现此IP地址属于破解程序发布者的广告网站，同时注册了名为 wrobot_free.kissdjmax.com 的域名 
 
 <details>
-<summary><code><strong>「 点击查看网站截图」</strong></code></summary>
+<summary><code><strong>「点击查看网站截图」</strong></code></summary>
 <img src="https://github.com/elseif2023/Wrobot/blob/main/picture/4.PNG?raw=true" width=100%  />
 </details>
 
@@ -45,7 +45,7 @@
 
 <details>
 <summary><code><strong>「点击查看截取信息」</strong></code></summary>
-
+  
 ```C#
 public class Main {
   public void Initialize() {
@@ -117,7 +117,7 @@ if (System.IO.File.Exists(@fullScreenShotPath + ".jpg"))
 ```
 </details>
 
-# 修改
+### 修改
 
 修改截取的内容后获得下面的代码，并将解析地址由 43.252.229.37 tumadre.000webhostapp.com 改为 127.0.0.1 tumadre.000webhostapp.com 在本地部署代码后 WRobot.exe 程序激活成功，并且功能正常。
 
@@ -138,20 +138,28 @@ public class Main {
 ```
 </details>
 
-# 分析
+### 分析
 检查过后发现 WRobotWOTLK\Bin\wManager.dll 应该被破解程序发布者做过手脚，在不本地部署代码只删除掉 wManager.dll 内几处代码后正常启动。
 
-# 推测
-此破解程序由于是用于魔兽世界私人服务器，此类游戏的登陆器大多会被杀毒软件提示病毒而让游戏者关闭杀毒，故破解程序很可能是通过设置多个障碍来在一个小范围内寻找合适的目标并以此获利。
+此破解程序是用于魔兽世界私人服务器，此类游登陆器大多会被杀毒软件提示病毒而让玩家关闭杀毒，破解程序通过设置多个障碍来在一个小范围内寻找合适的目标并以此获利。
 
 应该是出于获利的目的 43.252.229.37 这个用于验证的IP并不是时刻都能使用(根本不需要，即便需要也不存在所谓流量过大)，从而诱导使用者付费。一旦 43.252.229.37 此验证IP无法验证，那么也无法截取到任何有效内容。
 
-此软件涉及屏幕截图和通过Web请求发送图像数据，这绝对不是正常软件会做的事。
+此软件涉及屏幕截图和通过Web请求发送图像数据，这绝不是正常软件会做的事。
 
-# 后续
-在经过火绒安全论坛提交了样本后，由于火绒安全认定，此破解程序为木马
+### 结论
+在经过[火绒安全](https://bbs.huorong.cn/forum.php?mod=viewthread&tid=122996/)论坛提交了样本后，由火绒安全认定此破解程序为木马
+
+```
+病毒名称：Trojan/Agent.bbp
+病毒ID：6D2ACBF71A377760
+病毒路径：C:\Users\game\AppData\Local\Temp\Rar$DRb2668.5172\破解版WRobot验证端.exe
+操作类型：修改 
+操作结果：已处理
+```
+https://user-images.githubusercontent.com/127265295/225115946-6562ab47-a3ad-4b4f-a5bd-0c086a57b625.mp4
 
 <details>
-<summary><code><strong>「点击查看」</strong></code></summary>
+<summary><code><strong>「查看截图」</strong></code></summary>
 <img src="https://github.com/elseif2023/Wrobot/blob/main/picture/Screenshot_2023-03-14_13-02-20.png?raw=true" width=30%  />
 </details>
