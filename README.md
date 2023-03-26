@@ -162,9 +162,21 @@ public class Main {
 ```
 https://user-images.githubusercontent.com/127265295/225115946-6562ab47-a3ad-4b4f-a5bd-0c086a57b625.mp4
 
-```
-```
+### 设置本地验证与去掉验证直接使用
+为避免更多人受害，通过2种方法可以不需要通过外部联网验证使用此软件。注意：下方网盘中全部文件来源于 QQ群 6456089 我不保证群管理员是否还添加了其他隐藏的木马，如果你想要使用请确保在虚拟机内运行。此网盘文件中包含2种验证方法的高清视频，过程很简单。
 
+#### 「方法1」
+
+https://user-images.githubusercontent.com/127265295/227767617-3db09c4e-4010-4a35-85e1-8ff17a42f501.mp4
+
+
+#### 「方法2」
+
+https://user-images.githubusercontent.com/127265295/227767634-607cfbc0-1a06-4508-8d1d-17fda18d6ae6.mp4
+
+```
+全文件下载：https://caiyun.139.com/m/i?075CuXuSUI4MY  提取码:eyPa  
+```
 <details>
 <summary><code><strong>「查看截图」</strong></code></summary>
 <img src="https://github.com/elseif2023/Wrobot/blob/main/picture/Screenshot_2023-03-14_13-02-20.png?raw=true" width=30%  />
