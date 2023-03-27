@@ -4,7 +4,7 @@
 
 通过搜索引擎发现此破解程序的作者多年来在很多与魔兽世界相关的 中/英 论坛上发布过此破解程序的推广信息。
 
-`木马传播涉事QQ号 8171974 287228864 401979123  QQ群 6456089 传播时间 2017-2023 至今还未被处理`
+`木马传播涉事QQ号 8171974 287228864 401979123  QQ群 6456089 传播时间 2017-2023 活跃至今`
 
 <details>
 <summary><code><strong>「点击查看」</strong></code></summary>
@@ -19,7 +19,7 @@
 <details>
 <summary><code><strong>「点击查看下载地址」</strong></code></summary>
 
-破解版WRobot验证端  解压密码：1234567890 
+破解版WRobot验证端  解压密码：1234567890 注意此文件为木马
 **[Download](https://github.com/elseif2023/Wrobot/blob/main/document/%E7%A0%B4%E8%A7%A3%E7%89%88WRobot%E9%AA%8C%E8%AF%81%E7%AB%AF.rar)**
 
 查毒检测报告：https://www.virustotal.com/gui/file/7f5703e57194fded6e5588ad54be0b5896009e51c41c6eeaca738a8f77bcb2e7
@@ -142,11 +142,16 @@ public class Main {
 </details>
 
 ### 分析
-检查过后发现 WRobotWOTLK\Bin\wManager.dll 应该被破解程序发布者做过手脚，在不本地部署代码只删除掉 wManager.dll 内几处代码后正常启动。
+检查过后发现 WRobotWOTLK\Bin\*.dll 应该被破解程序发布者做过手脚，在不本地部署代码只删除掉 *.dll 内几处代码后正常启动。
 
 此破解程序是用于魔兽世界私人服务器，此类游登陆器大多会被杀毒软件提示病毒而让玩家关闭杀毒，破解程序通过设置多个障碍来在一个小范围内寻找合适的目标并以此获利。
 
 应该是出于获利的目的 43.252.229.37 这个用于验证的IP并不是时刻都能使用(根本不需要，即便需要也不存在所谓流量过大)，从而诱导使用者付费。一旦 43.252.229.37 此验证IP无法验证，那么也无法截取到任何有效内容。
+
+```
+域名: wrobot_free.kissdjmax.com	 IP: 43.252.229.37  托管: Cloudie Limited
+域名: wrobot_vip.kissdjmax.com	 IP: 103.96.74.226  托管: Cloudie Limited
+```
 
 此软件涉及屏幕截图和通过Web请求发送图像数据，这绝不是正常软件会做的事。
 
@@ -175,11 +180,11 @@ https://user-images.githubusercontent.com/127265295/227767617-3db09c4e-4010-4a35
 https://user-images.githubusercontent.com/127265295/227767634-607cfbc0-1a06-4508-8d1d-17fda18d6ae6.mp4
 
 ```
-全文件下载：https://caiyun.139.com/m/i?075CuXuSUI4MY  提取码:eyPa  
+全文件下载：https://caiyun.139.com/m/i?075CuXuSUI4MY  提取码:eyPa 已知木马已删除,但不排除还有
 ```
 <details>
 <summary><code><strong>「查看截图」</strong></code></summary>
 <img src="https://github.com/elseif2023/Wrobot/blob/main/picture/Screenshot_2023-03-14_13-02-20.png?raw=true" width=30%  />
 </details>
 
-### 所有文件都保存在此存储库内可自行下载检查，请注意此文件为病毒木马
+### 所有文件都在此存储库内可自行下载检查,注意此存储库的有不安全的文件,请在虚拟机内查看.带密码的压缩包内的文件已认定为木马
