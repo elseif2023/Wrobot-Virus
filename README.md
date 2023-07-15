@@ -180,7 +180,7 @@ https://user-images.githubusercontent.com/127265295/227767617-3db09c4e-4010-4a35
 https://user-images.githubusercontent.com/127265295/227767634-607cfbc0-1a06-4508-8d1d-17fda18d6ae6.mp4
 
 ```
-已知木马已删除,但不排除还有。下面是全文件下载地址
+已知木马已删除,但不排除还有。下面是全文件下载地址，存档压缩文件解压密码：内含木马病毒，勿信任何广告，虚拟机内使用
 
 移动网盘 https://caiyun.139.com/m/i?075CuXuSUI4MY  提取码:eyPa
 百度网盘 https://pan.baidu.com/s/18piFxYvKNR2M4T0NvNqJbw?pwd=zvbs 提取码：zvbs
