@@ -180,7 +180,14 @@ https://user-images.githubusercontent.com/127265295/227767617-3db09c4e-4010-4a35
 https://user-images.githubusercontent.com/127265295/227767634-607cfbc0-1a06-4508-8d1d-17fda18d6ae6.mp4
 
 ```
-全文件下载：https://caiyun.139.com/m/i?075CuXuSUI4MY  提取码:eyPa 已知木马已删除,但不排除还有
+已知木马已删除,但不排除还有。下面是全文件下载地址
+
+移动网盘 https://caiyun.139.com/m/i?075CuXuSUI4MY  提取码:eyPa
+百度网盘 https://pan.baidu.com/s/18piFxYvKNR2M4T0NvNqJbw?pwd=zvbs 提取码：zvbs
+
+谷歌网盘 https://drive.google.com/drive/folders/1--JXH7XOqQuKQRFP9jTQStCuIprzlP6Z?usp=drive_link
+PikPak  https://mypikpak.com/s/VN_OAadRObxz_H4E6MSfZHCCo1 密码: u36a
+
 ```
 <details>
 <summary><code><strong>「查看截图」</strong></code></summary>
