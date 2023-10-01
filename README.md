@@ -180,15 +180,23 @@ https://user-images.githubusercontent.com/127265295/227767617-3db09c4e-4010-4a35
 https://user-images.githubusercontent.com/127265295/227767634-607cfbc0-1a06-4508-8d1d-17fda18d6ae6.mp4
 
 ```
-已知木马已删除,但不排除还有。下面是全文件下载地址，存档压缩文件解压密码：内含木马病毒，勿信任何广告，虚拟机内使用
+原始文件的下载地址，存档压缩文件解压密码：内含木马病毒，勿信任何广告，虚拟机内使用
 
-移动网盘 https://caiyun.139.com/m/i?075CuXuSUI4MY  提取码:eyPa
-百度网盘 https://pan.baidu.com/s/18piFxYvKNR2M4T0NvNqJbw?pwd=zvbs 提取码：zvbs
-
-谷歌网盘 https://drive.google.com/drive/folders/1--JXH7XOqQuKQRFP9jTQStCuIprzlP6Z?usp=drive_link
-PikPak  https://mypikpak.com/s/VN_OAadRObxz_H4E6MSfZHCCo1 密码: u36a
+OneDrive https://1drv.ms/f/s!At2v7bT7ao8HcZlbu4z6qDXq3vs?e=3AHQie
+谷歌网盘  https://drive.google.com/drive/folders/1--JXH7XOqQuKQRFP9jTQStCuIprzlP6Z?usp=drive_link
+PikPak   https://mypikpak.com/s/VN_OAadRObxz_H4E6MSfZHCCo1 密码: u36a
 
 ```
+
+```
+已知木马已删除,不排除还有。免验证整合版下载地址
+
+OneDrive https://1drv.ms/f/s!At2v7bT7ao8Hs1B9Mhk7iUfiLGxz?e=nviFXd
+
+```
+
+联系邮箱  riewk2012@gmail.com
+
 <details>
 <summary><code><strong>「查看截图」</strong></code></summary>
 <img src="https://github.com/elseif2023/Wrobot/blob/main/picture/Screenshot_2023-03-14_13-02-20.png?raw=true" width=30%  />
